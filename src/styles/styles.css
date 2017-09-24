@@ -1,0 +1,104 @@
+body {
+    margin: 0 auto;
+    background-color: #222222;
+}
+
+.songListContainer {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.songList {
+    background: #98D9C2;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #222222;
+    margin: 1rem;
+    width: 40rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.songBox {
+    font-weight: 700;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn {
+    margin: 1rem;
+}
+
+#sendMessageButton {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 3px;
+    color: white;
+    border-color: #fed136;
+    background-color: #fed136;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#sendMessageButton.focus, #sendMessageButton:focus {
+    color: white;
+    border-color: #b48b01;
+    background-color: #fec503;
+}
+
+#sendMessageButton:hover {
+    color: white;
+    border-color: #f6bf01;
+    background-color: #fec503;
+}
+
+#sendMessageButton.active, #sendMessageButton:active, .open > #sendMessageButton.dropdown-toggle {
+    color: white;
+    border-color: #f6bf01;
+    background-color: #fec503;
+}
+
+#sendMessageButton.active.focus, #sendMessageButton.active:focus, #sendMessageButton.active:hover, #sendMessageButton:active.focus, #sendMessageButton:active:focus, #sendMessageButton:active:hover, .open > #sendMessageButton.dropdown-toggle.focus, .open > #sendMessageButton.dropdown-toggle:focus, .open > #sendMessageButton.dropdown-toggle:hover {
+    color: white;
+    border-color: #b48b01;
+    background-color: #dcab01;
+}
+
+#sendMessageButton.active, #sendMessageButton:active, .open > #sendMessageButton.dropdown-toggle {
+    background-image: none;
+}
+
+#sendMessageButton.disabled.focus, #sendMessageButton.disabled:focus, #sendMessageButton.disabled:hover, #sendMessageButton[disabled].focus, #sendMessageButton[disabled]:focus, #sendMessageButton[disabled]:hover, fieldset[disabled] #sendMessageButton.focus, fieldset[disabled] #sendMessageButton:focus, fieldset[disabled] #sendMessageButton:hover {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+#sendMessageButton.badge {
+    color: #fed136;
+    background-color: white;
+}
+
+#mainNav {
+    background: #98D9C2;
+    opacity: 0.9;
+    padding: 0;
+}
+
+.masthead {
+    margin-top: 100px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-image: url("headphoneIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-control {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

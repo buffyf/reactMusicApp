@@ -11,16 +11,18 @@ export default class PlayListItem extends Component {
 
 
             return (
-                <div key={index}>
-                    <p>User: {song.userName}</p>
-                    <p>Artist/Band: {song.songArtist}</p>
-                    <p>Title: {song.songTitle}</p>
-                    <p>Notes: {song.songNotes}</p>
+
+                <div className="songList" key={index}>
+                    <p><span className="songBox">User:&nbsp;&nbsp; </span>{song.userName}</p>
+                    <p><span className="songBox">Artist or Band:&nbsp;&nbsp; </span>{song.songArtist}</p>
+                    <p><span className="songBox">Title:&nbsp;&nbsp; </span>{song.songTitle}</p>
+                    <p><span className="songBox">Notes:&nbsp;&nbsp; </span>{song.songNotes}</p>
                 </div>
+
             )
         })
         return (
-            <div>
+            <div className="songListContainer">
                 {songs}
             </div>
         );

@@ -51,17 +51,49 @@ export default class PlayListForm extends Component {
     render() {
         let { userName, songArtist, songTitle, songNotes } = this.state;
         return (
-            <div>
-                <form onSubmit={this.addToList}>
-                    <div>
-                        <input name="userName" type="text" value={userName} placeholder="Username" onChange={this.handleInputChange} />
-                        <input name="songArtist" type="text" value={songArtist} placeholder="Artist or Band Name" onChange={this.handleInputChange} />
-                        <input name="songTitle" type="text" value={songTitle} placeholder="songTitle" onChange={this.handleInputChange} />
-                        <input name="songNotes" type="text" value={songNotes} placeholder="songNotes" onChange={this.handleInputChange} />
+            <section id="contact">
+                <div id="suggest" className="container">
+                    <div className="row">
+                        <div className="col-lg-12 text-center">
+                            <h2 className="section-heading">Suggest a Song</h2>
+                        </div>
                     </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <form onSubmit={this.addToList} id="contactForm" name="sentMessage" novalidate>
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <div className="form-group">
+                                            <input className="form-control" id="name" name="userName" type="text" value={userName} placeholder="Username" onChange={this.handleInputChange} required data-validation-required-message="Please enter your username." />
+                                            <p className="help-block text-danger"></p>
+                                        </div>
+                                        <div className="form-group">
+                                            <input className="form-control" id="email" name="songArtist" type="text" value={songArtist} placeholder="Artist or Band" onChange={this.handleInputChange} required data-validation-required-message="Please enter an artist or band name." />
+                                            <p className="help-block text-danger"></p>
+                                        </div>
+                                        <div className="form-group">
+                                            <input className="form-control" id="phone" name="songTitle" type="text" value={songTitle} placeholder="Song Title" onChange={this.handleInputChange} required data-validation-required-message="Please enter a song title." />
+                                            <p className="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="form-group">
+                                            <textarea className="form-control" id="message" name="songNotes" type="text" value={songNotes} placeholder="Notes" onChange={this.handleInputChange} required data-validation-required-message="Please enter notes."></textarea>
+                                            <p className="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div className="clearfix"></div>
+                                    <div className="col-lg-12 text-center">
+                                        <div id="success"></div>
+                                        <button id="sendMessageButton" class="btn btn-xl" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         )
     }
 }
