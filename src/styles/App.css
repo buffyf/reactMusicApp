@@ -145,15 +145,17 @@ body {
 
 header.masthead {
   text-align: center;
+  height: 100%;
   color: white;
   background-image: url("headphones.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 
 header.masthead .intro-text {
@@ -580,9 +582,6 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #222222;
-  /* background-image: url("headphones.jpg");
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 section#contact .section-heading {
