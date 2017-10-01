@@ -156,6 +156,7 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  padding-bottom: 8rem;
 }
 
 header.masthead .intro-text {

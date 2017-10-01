@@ -5,7 +5,6 @@ import PlayListForm from "./components/PlayListForm";
 import Landing from "./components/Landing";
 import "./styles/App.css";
 import "./styles/styles.css";
-import { NavLink } from "react-router-dom";
 
 export default class App extends Component {
   render() {
