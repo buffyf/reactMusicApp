@@ -30,10 +30,10 @@ export default class PlayList extends Component {
         let songs = this.state.songs;
         return (
             <div id="playlist" className="songListContainer">
-                <PlayListItem songs={songs} />
                 <form onSubmit={this.fetchData}>
                     <button id="sendMessageButton" type="submit">Update List</button>
                 </form>
+                <PlayListItem songs={songs} />
             </div>
         )
     }

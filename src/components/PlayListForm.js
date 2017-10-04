@@ -64,21 +64,21 @@ export default class PlayListForm extends Component {
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <input className="form-control" id="name" name="userName" type="text" value={userName} placeholder="Username" onChange={this.handleInputChange} required data-validation-required-message="Please enter your username." />
+                                            <input className="form-control" id="name" name="userName" type="text" autoComplete="off" value={userName} placeholder="Username" onChange={this.handleInputChange} required data-validation-required-message="Please enter your username." />
                                             <p className="help-block text-danger"></p>
                                         </div>
                                         <div className="form-group">
-                                            <input className="form-control" id="email" name="songArtist" type="text" value={songArtist} placeholder="Artist or Band" onChange={this.handleInputChange} required data-validation-required-message="Please enter an artist or band name." />
+                                            <input className="form-control" id="email" name="songArtist" type="text" autoComplete="off" value={songArtist} placeholder="Artist or Band" onChange={this.handleInputChange} required data-validation-required-message="Please enter an artist or band name." />
                                             <p className="help-block text-danger"></p>
                                         </div>
                                         <div className="form-group">
-                                            <input className="form-control" id="phone" name="songTitle" type="text" value={songTitle} placeholder="Song Title" onChange={this.handleInputChange} required data-validation-required-message="Please enter a song title." />
+                                            <input className="form-control" id="phone" name="songTitle" type="text" autoComplete="off" value={songTitle} placeholder="Song Title" onChange={this.handleInputChange} required data-validation-required-message="Please enter a song title." />
                                             <p className="help-block text-danger"></p>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <textarea className="form-control" id="message" name="songNotes" type="text" value={songNotes} placeholder="Notes" onChange={this.handleInputChange} required data-validation-required-message="Please enter notes."></textarea>
+                                            <textarea className="form-control" id="message" name="songNotes" type="text" autoComplete="off" value={songNotes} placeholder="Notes" onChange={this.handleInputChange} required data-validation-required-message="Please enter notes."></textarea>
                                             <p className="help-block text-danger"></p>
                                         </div>
                                     </div>
